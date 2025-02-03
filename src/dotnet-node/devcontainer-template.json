@@ -1,10 +1,10 @@
 {
     "id": "dotnet-node",
     "version": "0.0.3",
-    "name": "C# (.NET) + Node.js",
-    "description": "Develop C# and .NET based applications. Includes all needed SDKs, extensions, and dependencies.",
+    "name": ".NET + Node.js",
+    "description": "Develop web applications with .NET and Node.js.",
     "documentationURL": "https://github.com/sebdanielsson/devcontainers/tree/main/src/dotnet-node",
-    "publisher": "Sebastian Danielsson",
+    "publisher": "sebdanielsson",
     "licenseURL": "https://github.com/sebdanielsson/devcontainers/blob/main/LICENSE",
     "options": {
         "imageVariant": {

@@ -1,7 +1,7 @@
 
-# C# (.NET) + Node.js (dotnet-node)
+# .NET + Node.js (dotnet-node)
 
-Develop C# and .NET based applications. Includes all needed SDKs, extensions, and dependencies.
+Develop web applications with .NET and Node.js.
 
 ## Options
 
@@ -10,8 +10,6 @@ Develop C# and .NET based applications. Includes all needed SDKs, extensions, an
 | imageVariant | Linux distro: | string | debian-12 |
 | dotnetVersion | Additional .NET versions: | string | lts |
 | nodeVersion | Node.js version: | string | lts |
-
-
 
 ---
 

@@ -1,7 +1,9 @@
 // More info: https://containers.dev/implementors/json_reference/
 {
-	"name": "C# (.NET) + Node.js",
-	"image": "mcr.microsoft.com/devcontainers/base:1-${templateOption:imageVariant}",
+	"name": ".NET + Node.js",
+	"dockerComposeFile": "compose.yaml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
 		"ghcr.io/devcontainers/features/dotnet:2": {
 			"version": "latest",
