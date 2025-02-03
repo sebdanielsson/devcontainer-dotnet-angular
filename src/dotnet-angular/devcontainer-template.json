@@ -38,8 +38,8 @@
         ".NET",
         ".NET Core",
         "C#",
-        "Angular",
-        "Node.js"
+        "Node.js",
+        "Angular"
     ],
     "optionalPaths": [
         ".github/*"
