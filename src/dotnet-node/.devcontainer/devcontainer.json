@@ -24,6 +24,10 @@
 			]
 		}
 	},
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+		"source=node_modules,target=/workspace/node_modules,type=volume"
+	],
 	"postCreateCommand": "npm install -g npm@latest"
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
