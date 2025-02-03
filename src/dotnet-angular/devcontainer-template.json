@@ -10,14 +10,19 @@
             "type": "string",
             "description": ".NET version:",
             "proposals": [
-                "9.0",
-                "8.0",
-                "9.0-bookworm",
-                "8.0-bookworm",
-                "9.0-noble",
-                "8.0-noble"
+                "debian-12",
+                "ubuntu-24.04"
             ],
-            "default": "9.0-bookworm"
+            "default": "debian-12"
+        },
+        "dotnetVersion": {
+            "type": "string",
+            "description": ".NET version:",
+            "proposals": [
+                "9.0",
+                "8.0"
+            ],
+            "default": "9.0"
         },
         "nodeVersion": {
             "type": "string",

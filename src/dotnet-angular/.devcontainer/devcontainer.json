@@ -1,9 +1,13 @@
 // More info: https://containers.dev/implementors/json_reference/
 {
 	"name": "C# (.NET) + Angular",
-	"image": "mcr.microsoft.com/devcontainers/dotnet:1-${templateOption:imageVariant}",
+	"image": "mcr.microsoft.com/devcontainers/base:1-${templateOption:imageVariant}",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/dotnet:2": {
+			"version": "latest",
+			"additionalVersions": "lts"
+		},
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "lts",
 			"nodeGypDependencies": true,
@@ -16,7 +20,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"ms-dotnettools.csharp"
 			]
 		}
 	},
