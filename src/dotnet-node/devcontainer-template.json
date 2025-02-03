@@ -1,0 +1,48 @@
+{
+    "id": "dotnet-node",
+    "version": "0.0.2",
+    "name": "C# (.NET) + Node.js",
+    "description": "Develop C# and .NET based applications. Includes all needed SDKs, extensions, and dependencies.",
+    "documentationURL": "https://github.com/sebdanielsson/devcontainers/tree/main",
+    "licenseURL": "https://github.com/sebdanielsson/devcontainers/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Linux distro:",
+            "proposals": [
+                "debian-12",
+                "ubuntu-24.04"
+            ],
+            "default": "debian-12"
+        },
+        "dotnetVersion": {
+            "type": "string",
+            "description": "Additional .NET versions:",
+            "proposals": [
+                "lts",
+                "9.0",
+                "8.0"
+            ],
+            "default": "lts"
+        },
+        "nodeVersion": {
+            "type": "string",
+            "description": "Node.js version:",
+            "proposals": [
+                "lts",
+                "22",
+                "20"
+            ],
+            "default": "lts"
+        }
+    },
+    "platforms": [
+        ".NET",
+        ".NET Core",
+        "C#",
+        "Node.js"
+    ],
+    "optionalPaths": [
+        ".github/*"
+    ]
+}
