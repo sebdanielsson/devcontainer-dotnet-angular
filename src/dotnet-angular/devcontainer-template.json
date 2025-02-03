@@ -1,0 +1,42 @@
+{
+    "id": "dotnet-angular",
+    "version": "0.0.1",
+    "name": "C# (.NET) + Angular 19",
+    "description": "Develop C# and .NET based applications. Includes all needed SDKs, extensions, and dependencies.",
+    "documentationURL": "https://github.com/sebdanielsson/devcontainer-dotnet-angular/tree/main",
+    "licenseURL": "https://github.com/sebdanielsson/devcontainers-dotnet-angular/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": ".NET version:",
+            "proposals": [
+                "9.0",
+                "8.0",
+                "9.0-bookworm",
+                "8.0-bookworm",
+                "9.0-noble",
+                "8.0-noble"
+            ],
+            "default": "9.0-bookworm"
+        },
+        "nodeVersion": {
+            "type": "string",
+            "description": "Node.js version:",
+            "proposals": [
+                "22",
+                "20"
+            ],
+            "default": "22"
+        }
+    },
+    "platforms": [
+        ".NET",
+        ".NET Core",
+        "C#",
+        "Angular",
+        "Node.js"
+    ],
+    "optionalPaths": [
+        ".github/*"
+    ]
+}
