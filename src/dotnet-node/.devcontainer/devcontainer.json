@@ -2,6 +2,10 @@
 {
 	"name": ".NET + Node.js",
 	"image": "mcr.microsoft.com/devcontainers/base:1-${templateOption:imageVariant}",
+	"runArgs": [
+		"--sysctl",
+		"net.ipv6.conf.all.disable_ipv6=1"
+	], // Workaround for: https://github.com/microsoft/vscode-remote-release/issues/7029
 	"features": {
 		"ghcr.io/devcontainers/features/dotnet:2": {
 			"version": "latest",
@@ -25,10 +29,4 @@
 		}
 	},
 	"postCreateCommand": "npm install -g npm@latest"
-	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	// 👇 Configure tool-specific properties.
-	// "customizations": {},
-	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }
